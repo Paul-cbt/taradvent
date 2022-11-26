@@ -1,4 +1,5 @@
 import 'package:flip_card/flip_card.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
@@ -79,10 +80,13 @@ class _DayTileState extends State<DayTile> {
                                         if (!isLocked) {
                                           if (!isOpended) {
                                             openCase();
+                                            HapticFeedback.heavyImpact();
                                           }
                                           setState(() {
                                             isOpended = !isOpended;
                                           });
+                                        } else {
+                                          HapticFeedback.vibrate();
                                         }
                                       },
                                       front: Material(

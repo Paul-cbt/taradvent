@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -60,6 +61,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: red,
       body: AnimatedSwitcher(
         duration: const Duration(milliseconds: 400),
@@ -113,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   Spacer(),
                   Image.asset(
-                    'christmas-tree.png',
+                    kIsWeb ? 'christmas-tree.png' : 'assets/christmas-tree.png',
                     height: MediaQuery.of(context).size.height / 2,
                   )
                 ],
