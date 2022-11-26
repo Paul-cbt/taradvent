@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>171439893771-2ft4iudtidemd2ihm12mj3dojlbumcg4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.171439893771-2ft4iudtidemd2ihm12mj3dojlbumcg4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAo_RSNyyxxLm97iSzThTvDN7t34pCE8oY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>171439893771</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.taradvent</string>
+	<key>PROJECT_ID</key>
+	<string>taradvent</string>
+	<key>STORAGE_BUCKET</key>
+	<string>taradvent.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:171439893771:ios:00eb787e2ab4cc5e0d460e</string>
+</dict>
+</plist>

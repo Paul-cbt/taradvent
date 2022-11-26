@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "171439893771",
+    "project_id": "taradvent",
+    "storage_bucket": "taradvent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171439893771:android:28eb43c3ca0d64400d460e",
+        "android_client_info": {
+          "package_name": "com.example.taradvent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171439893771-4m528qhg4vhb2alac5mpoaj2ulhfcrpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfyydQOJ2K2RCUijC3ZRcccl9D46NqQi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171439893771-4m528qhg4vhb2alac5mpoaj2ulhfcrpa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "171439893771-t6gbgiu67c5o908cgakbnsq281a1u86f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.paul.taradvent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
