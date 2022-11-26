@@ -47,38 +47,38 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyASDGFVMn-dhzRaux3EQx3xdvgmvDiD0e0',
     appId: '1:171439893771:web:c138355c48a57faa0d460e',
     messagingSenderId: '171439893771',
-    projectId: 'taradvent',
-    authDomain: 'taradvent.firebaseapp.com',
-    storageBucket: 'taradvent.appspot.com',
+    projectId: 'taradventapp',
+    authDomain: 'taradventapp.firebaseapp.com',
+    storageBucket: 'taradventapp.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDfyydQOJ2K2RCUijC3ZRcccl9D46NqQi0',
     appId: '1:171439893771:android:28eb43c3ca0d64400d460e',
     messagingSenderId: '171439893771',
-    projectId: 'taradvent',
-    storageBucket: 'taradvent.appspot.com',
+    projectId: 'taradventapp',
+    storageBucket: 'taradventapp.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAo_RSNyyxxLm97iSzThTvDN7t34pCE8oY',
     appId: '1:171439893771:ios:00eb787e2ab4cc5e0d460e',
     messagingSenderId: '171439893771',
-    projectId: 'taradvent',
-    storageBucket: 'taradvent.appspot.com',
+    projectId: 'taradventapp',
+    storageBucket: 'taradventapp.appspot.com',
     iosClientId:
         '171439893771-2ft4iudtidemd2ihm12mj3dojlbumcg4.apps.googleusercontent.com',
-    iosBundleId: 'com.example.taradvent',
+    iosBundleId: 'com.example.taradventapp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyAo_RSNyyxxLm97iSzThTvDN7t34pCE8oY',
     appId: '1:171439893771:ios:00eb787e2ab4cc5e0d460e',
     messagingSenderId: '171439893771',
-    projectId: 'taradvent',
-    storageBucket: 'taradvent.appspot.com',
+    projectId: 'taradventapp',
+    storageBucket: 'taradventapp.appspot.com',
     iosClientId:
         '171439893771-2ft4iudtidemd2ihm12mj3dojlbumcg4.apps.googleusercontent.com',
-    iosBundleId: 'com.example.taradvent',
+    iosBundleId: 'com.example.taradventapp',
   );
 }

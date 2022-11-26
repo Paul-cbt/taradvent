@@ -1,4 +1,4 @@
-package com.example.taradvent
+package com.example.taradventapp
 
 import io.flutter.embedding.android.FlutterActivity
 

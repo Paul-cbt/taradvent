@@ -5,8 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:taradvent/services.dart/authService.dart';
-import 'package:taradvent/wrapper.dart';
+import 'package:taradventapp/services.dart/authService.dart';
+import 'package:taradventapp/wrapper.dart';
 import 'firebase_options.dart';
 
 void main() async {

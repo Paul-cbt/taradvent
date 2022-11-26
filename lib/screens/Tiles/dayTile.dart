@@ -3,9 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
-import 'package:taradvent/models/adventCase.dart';
-import 'package:taradvent/services.dart/databaseService.dart';
-import 'package:taradvent/shared/constants.dart';
+import 'package:taradventapp/models/adventCase.dart';
+import 'package:taradventapp/services.dart/databaseService.dart';
+import 'package:taradventapp/shared/constants.dart';
 
 class DayTile extends StatefulWidget {
   final AdventCase adventCase;

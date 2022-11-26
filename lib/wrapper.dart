@@ -3,10 +3,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:provider/provider.dart' as p;
 
 import 'package:flutter/material.dart';
-import 'package:taradvent/screens/home/home.dart';
-import 'package:taradvent/screens/login/loginPage.dart';
-import 'package:taradvent/services.dart/databaseService.dart';
-import 'package:taradvent/shared/appBarStyle.dart';
+import 'package:taradventapp/screens/home/home.dart';
+import 'package:taradventapp/screens/login/loginPage.dart';
+import 'package:taradventapp/services.dart/databaseService.dart';
+import 'package:taradventapp/shared/appBarStyle.dart';
 
 class Wrapper extends StatefulWidget {
   final String? deepLink;

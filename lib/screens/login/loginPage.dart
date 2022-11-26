@@ -5,10 +5,10 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:pinput/pinput.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:taradvent/screens/home/home.dart';
-import 'package:taradvent/services.dart/databaseService.dart';
-import 'package:taradvent/shared/constants.dart';
-import 'package:taradvent/shared/loading.dart';
+import 'package:taradventapp/screens/home/home.dart';
+import 'package:taradventapp/services.dart/databaseService.dart';
+import 'package:taradventapp/shared/constants.dart';
+import 'package:taradventapp/shared/loading.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

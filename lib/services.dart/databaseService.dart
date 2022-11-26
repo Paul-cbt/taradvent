@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:taradvent/models/advent.dart';
-import 'package:taradvent/models/adventCase.dart';
-import 'package:taradvent/services.dart/authService.dart';
-import 'package:taradvent/services.dart/jsonDecode.dart';
+import 'package:taradventapp/models/advent.dart';
+import 'package:taradventapp/models/adventCase.dart';
+import 'package:taradventapp/services.dart/authService.dart';
+import 'package:taradventapp/services.dart/jsonDecode.dart';
 
 class DatabaseService {
   //the firestore collection where all the advents are stored
