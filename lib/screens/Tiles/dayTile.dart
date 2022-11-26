@@ -21,7 +21,8 @@ class _DayTileState extends State<DayTile> {
 
   @override
   void initState() {
-    isLocked = DateTime.now().day < widget.adventCase.day;
+    isLocked = !(DateTime.now().day >= widget.adventCase.day &&
+        DateTime.now().month == 12);
     isOpended = widget.adventCase.isOpeneded;
     super.initState();
   }
