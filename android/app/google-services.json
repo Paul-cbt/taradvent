@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "171439893771",
-    "project_id": "taradventapp",
-    "storage_bucket": "taradventapp.appspot.com"
+    "project_id": "taradvent",
+    "storage_bucket": "taradvent.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:171439893771:android:28eb43c3ca0d64400d460e",
         "android_client_info": {
-          "package_name": "com.example.taradventapp"
+          "package_name": "com.example.taradvent"
         }
       },
       "oauth_client": [
@@ -31,10 +31,10 @@
               "client_type": 3
             },
             {
-              "client_id": "171439893771-t6gbgiu67c5o908cgakbnsq281a1u86f.apps.googleusercontent.com",
+              "client_id": "171439893771-2ft4iudtidemd2ihm12mj3dojlbumcg4.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.paul.taradventapp"
+                "bundle_id": "com.example.taradvent"
               }
             }
           ]

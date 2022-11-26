@@ -4,11 +4,11 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:taradventapp/models/advent.dart';
-import 'package:taradventapp/screens/Tiles/dayTile.dart';
-import 'package:taradventapp/services.dart/authService.dart';
-import 'package:taradventapp/services.dart/databaseService.dart';
-import 'package:taradventapp/shared/constants.dart';
+import 'package:taradvent/models/advent.dart';
+import 'package:taradvent/screens/Tiles/dayTile.dart';
+import 'package:taradvent/services.dart/authService.dart';
+import 'package:taradvent/services.dart/databaseService.dart';
+import 'package:taradvent/shared/constants.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

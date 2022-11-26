@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:loading_indicator/loading_indicator.dart';
-import 'package:taradventapp/shared/constants.dart';
+import 'package:taradvent/shared/constants.dart';
 
 class Loading extends StatelessWidget {
   const Loading({super.key});

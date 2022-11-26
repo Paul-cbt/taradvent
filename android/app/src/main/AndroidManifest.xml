@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.taradventapp">
+    package="com.example.taradvent">
    <application
-        android:label="taradventapp"
+        android:label="taradvent"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

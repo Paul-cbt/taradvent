@@ -13,11 +13,11 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.taradventapp</string>
+	<string>com.example.taradvent</string>
 	<key>PROJECT_ID</key>
-	<string>taradventapp</string>
+	<string>taradvent</string>
 	<key>STORAGE_BUCKET</key>
-	<string>taradventapp.appspot.com</string>
+	<string>taradvent.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>

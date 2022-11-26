@@ -1,4 +1,4 @@
-import 'package:taradventapp/models/adventCase.dart';
+import 'package:taradvent/models/adventCase.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'advent.g.dart';

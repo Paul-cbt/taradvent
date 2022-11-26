@@ -1,6 +1,6 @@
 {
-    "name": "taradventapp",
-    "short_name": "taradventapp",
+    "name": "taradvent",
+    "short_name": "taradvent",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
