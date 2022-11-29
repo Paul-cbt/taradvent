@@ -50,6 +50,7 @@ class _DayTileState extends State<DayTile> {
               Navigator.of(context).push(PageRouteBuilder(
                 opaque: false,
                 barrierDismissible: true,
+                barrierColor: Colors.black.withOpacity(0.1),
                 pageBuilder: (context, animation, secondaryAnimation) {
                   return Padding(
                     padding: const EdgeInsets.all(20),
@@ -65,96 +66,120 @@ class _DayTileState extends State<DayTile> {
                             aspectRatio: aspectRatio,
                             child:
                                 LayoutBuilder(builder: (context, constraints) {
-                              return Neumorphic(
-                                style: NeumorphicStyle(
-                                    color: red,
-                                    lightSource: LightSource.bottomRight,
-                                    intensity: 0.4),
-                                padding: EdgeInsets.zero,
-                                child: SizedBox(
-                                  height: constraints.maxHeight,
-                                  width: constraints.maxHeight,
-                                  child: Hero(
-                                    tag: widget.adventCase.day,
-                                    child: FlipCard(
-                                      onFlip: () {
-                                        if (!isLocked) {
-                                          if (!isOpended) {
-                                            openCase();
-                                            HapticFeedback.heavyImpact();
-                                          }
-                                          setState(() {
-                                            isOpended = !isOpended;
-                                          });
-                                        } else {
-                                          HapticFeedback.vibrate();
+                              return SizedBox(
+                                height: constraints.maxHeight,
+                                width: constraints.maxHeight,
+                                child: Hero(
+                                  tag: widget.adventCase.day,
+                                  child: FlipCard(
+                                    onFlip: () {
+                                      if (!isLocked) {
+                                        if (!isOpended) {
+                                          openCase();
+                                          HapticFeedback.heavyImpact();
                                         }
-                                      },
-                                      front: Material(
-                                        color: Colors.transparent,
-                                        child: Container(
-                                          color: red,
-                                          child: Center(
-                                            child: Text(
-                                              widget.adventCase.day.toString(),
-                                              style: TextStyle(
-                                                  color: white,
-                                                  fontFamily: 'QuickSand',
-                                                  fontSize:
-                                                      (constraints.maxHeight <
+                                        setState(() {
+                                          isOpended = !isOpended;
+                                        });
+                                      } else {
+                                        HapticFeedback.heavyImpact();
+                                      }
+                                    },
+                                    front: Material(
+                                      color: Colors.transparent,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          color: widget.adventCase.day == 14
+                                              ? pink
+                                              : red,
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            widget.adventCase.day.toString(),
+                                            style: TextStyle(
+                                                color: white,
+                                                fontFamily: 'QuickSand',
+                                                fontSize: (constraints
+                                                                .maxHeight <
+                                                            constraints.maxWidth
+                                                        ? constraints.maxHeight
+                                                        : constraints
+                                                            .maxWidth) /
+                                                    2.6),
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    back: AnimatedSwitcher(
+                                      duration:
+                                          const Duration(milliseconds: 400),
+                                      child: isLocked
+                                          ? Container(
+                                              decoration: BoxDecoration(
+                                                color:
+                                                    widget.adventCase.day == 14
+                                                        ? pink
+                                                        : red,
+                                                borderRadius:
+                                                    BorderRadius.circular(10),
+                                              ),
+                                              child: Center(
+                                                child: Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  children: [
+                                                    Icon(
+                                                      widget.adventCase.day ==
+                                                              14
+                                                          ? Icons.favorite
+                                                          : Icons.lock,
+                                                      color: white,
+                                                      size: (constraints
+                                                                      .maxHeight <
                                                                   constraints
                                                                       .maxWidth
                                                               ? constraints
                                                                   .maxHeight
                                                               : constraints
                                                                   .maxWidth) /
-                                                          2.6),
-                                              textAlign: TextAlign.center,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      back: AnimatedSwitcher(
-                                        duration:
-                                            const Duration(milliseconds: 400),
-                                        child: isLocked
-                                            ? Container(
-                                                color: red,
-                                                child: Center(
-                                                  child: Icon(
-                                                    Icons.lock,
-                                                    color: white,
-                                                    size: (constraints
-                                                                    .maxHeight <
-                                                                constraints
-                                                                    .maxWidth
-                                                            ? constraints
-                                                                .maxHeight
-                                                            : constraints
-                                                                .maxWidth) /
-                                                        2.6,
-                                                  ),
-                                                ),
-                                              )
-                                            : Container(
-                                                color: green,
-                                                child: Center(
-                                                  child: SingleChildScrollView(
-                                                    child: Text(
-                                                      widget.adventCase.text
-                                                          .toString(),
-                                                      style: TextStyle(
-                                                          color: white,
-                                                          fontFamily:
-                                                              'QuickSand',
-                                                          fontSize: 20),
-                                                      textAlign:
-                                                          TextAlign.center,
+                                                          2.6,
                                                     ),
+                                                    if (widget.adventCase.day ==
+                                                        14)
+                                                      Material(
+                                                        color:
+                                                            Colors.transparent,
+                                                        child: Text(
+                                                          'Not yet mon bébé <3',
+                                                          style: TextStyle(
+                                                              color: white),
+                                                        ),
+                                                      )
+                                                  ],
+                                                ),
+                                              ),
+                                            )
+                                          : Container(
+                                              color: widget.adventCase.day == 14
+                                                  ? pink
+                                                  : green,
+                                              child: Center(
+                                                child: SingleChildScrollView(
+                                                  child: Text(
+                                                    widget.adventCase.text
+                                                        .toString(),
+                                                    style: TextStyle(
+                                                        color: white,
+                                                        fontFamily: 'QuickSand',
+                                                        fontSize: 20),
+                                                    textAlign: TextAlign.center,
                                                   ),
                                                 ),
                                               ),
-                                      ),
+                                            ),
                                     ),
                                   ),
                                 ),
@@ -173,7 +198,11 @@ class _DayTileState extends State<DayTile> {
               child: Material(
                 color: Colors.transparent,
                 child: Container(
-                  color: isOpended ? green : red,
+                  color: isOpended
+                      ? widget.adventCase.day == 14
+                          ? pink
+                          : green
+                      : red,
                   child: Center(
                     child: Text(
                       widget.adventCase.day.toString(),

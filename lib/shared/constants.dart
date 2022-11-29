@@ -4,6 +4,7 @@ const red = Color(0xffAA3A3A);
 const green = Color(0xffA4B787);
 const white = Color(0xffF4F4F4);
 const beige = Color(0xffF8E4B7);
+const pink = Color(0xffcb667f);
 
 Map<int, List<int>> homeCellSizes = {
   18: [1, 1],

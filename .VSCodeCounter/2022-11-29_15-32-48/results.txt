@@ -1,0 +1,47 @@
+Date : 2022-11-29 15:32:48
+Directory : /Users/paulcaubet/Documents/projects/taradvent/lib
+Total : 16 files,  790 codes, 25 comments, 96 blanks, all 911 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Dart     |         16 |        790 |         25 |         96 |        911 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                     |         16 |        790 |         25 |         96 |        911 |
+| models                                                                                |          4 |         50 |          9 |         20 |         79 |
+| screens                                                                               |          3 |        446 |          0 |         23 |        469 |
+| screens/Tiles                                                                         |          1 |        193 |          0 |          7 |        200 |
+| screens/home                                                                          |          1 |        135 |          0 |          7 |        142 |
+| screens/login                                                                         |          1 |        118 |          0 |          9 |        127 |
+| services.dart                                                                         |          3 |         85 |          3 |         20 |        108 |
+| shared                                                                                |          3 |         70 |          0 |          9 |         79 |
++---------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                              | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/paulcaubet/Documents/projects/taradvent/lib/firebase_options.dart              | Dart     |         65 |         12 |          6 |         83 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/main.dart                          | Dart     |         42 |          1 |          9 |         52 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/models/advent.dart                 | Dart     |         13 |          0 |          5 |         18 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/models/advent.g.dart               | Dart     |         13 |          4 |          5 |         22 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/models/adventCase.dart             | Dart     |         12 |          1 |          5 |         18 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/models/adventCase.g.dart           | Dart     |         12 |          4 |          5 |         21 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/screens/Tiles/dayTile.dart         | Dart     |        193 |          0 |          7 |        200 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/screens/home/home.dart             | Dart     |        135 |          0 |          7 |        142 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/screens/login/loginPage.dart       | Dart     |        118 |          0 |          9 |        127 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/services.dart/authService.dart     | Dart     |         21 |          0 |          6 |         27 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/services.dart/databaseService.dart | Dart     |         54 |          3 |         10 |         67 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/services.dart/jsonDecode.dart      | Dart     |         10 |          0 |          4 |         14 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/shared/appBarStyle.dart            | Dart     |         18 |          0 |          3 |         21 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/shared/constants.dart              | Dart     |         31 |          0 |          3 |         34 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/shared/loading.dart                | Dart     |         21 |          0 |          3 |         24 |
+| /Users/paulcaubet/Documents/projects/taradvent/lib/wrapper.dart                       | Dart     |         32 |          0 |          9 |         41 |
+| Total                                                                                 |          |        790 |         25 |         96 |        911 |
++---------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
