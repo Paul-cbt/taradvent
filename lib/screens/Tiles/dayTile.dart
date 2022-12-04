@@ -93,7 +93,9 @@ class _DayTileState extends State<DayTile> {
                                               BorderRadius.circular(10),
                                           color: widget.adventCase.day == 14
                                               ? pink
-                                              : red,
+                                              : isOpended
+                                                  ? green
+                                                  : red,
                                         ),
                                         child: Center(
                                           child: Text(
@@ -113,73 +115,81 @@ class _DayTileState extends State<DayTile> {
                                         ),
                                       ),
                                     ),
-                                    back: AnimatedSwitcher(
-                                      duration:
-                                          const Duration(milliseconds: 400),
-                                      child: isLocked
-                                          ? Container(
-                                              decoration: BoxDecoration(
+                                    back: Material(
+                                      color: Colors.transparent,
+                                      child: AnimatedSwitcher(
+                                        duration:
+                                            const Duration(milliseconds: 400),
+                                        child: isLocked
+                                            ? Container(
+                                                decoration: BoxDecoration(
+                                                  color:
+                                                      widget.adventCase.day ==
+                                                              14
+                                                          ? pink
+                                                          : red,
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
+                                                ),
+                                                child: Center(
+                                                  child: Column(
+                                                    mainAxisSize:
+                                                        MainAxisSize.min,
+                                                    children: [
+                                                      Icon(
+                                                        widget.adventCase.day ==
+                                                                14
+                                                            ? Icons.favorite
+                                                            : Icons.lock,
+                                                        color: white,
+                                                        size: (constraints
+                                                                        .maxHeight <
+                                                                    constraints
+                                                                        .maxWidth
+                                                                ? constraints
+                                                                    .maxHeight
+                                                                : constraints
+                                                                    .maxWidth) /
+                                                            2.6,
+                                                      ),
+                                                      if (widget
+                                                              .adventCase.day ==
+                                                          14)
+                                                        Material(
+                                                          color: Colors
+                                                              .transparent,
+                                                          child: Text(
+                                                            'Not yet mon bébé <3',
+                                                            style: TextStyle(
+                                                                color: white),
+                                                          ),
+                                                        )
+                                                    ],
+                                                  ),
+                                                ),
+                                              )
+                                            : Container(
                                                 color:
                                                     widget.adventCase.day == 14
                                                         ? pink
-                                                        : red,
-                                                borderRadius:
-                                                    BorderRadius.circular(10),
-                                              ),
-                                              child: Center(
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.min,
-                                                  children: [
-                                                    Icon(
-                                                      widget.adventCase.day ==
-                                                              14
-                                                          ? Icons.favorite
-                                                          : Icons.lock,
-                                                      color: white,
-                                                      size: (constraints
-                                                                      .maxHeight <
-                                                                  constraints
-                                                                      .maxWidth
-                                                              ? constraints
-                                                                  .maxHeight
-                                                              : constraints
-                                                                  .maxWidth) /
-                                                          2.6,
+                                                        : green,
+                                                child: Center(
+                                                  child: SingleChildScrollView(
+                                                    child: Text(
+                                                      widget.adventCase.text
+                                                          .toString(),
+                                                      style: TextStyle(
+                                                          color: white,
+                                                          fontFamily:
+                                                              'QuickSand',
+                                                          fontSize: 20),
+                                                      textAlign:
+                                                          TextAlign.center,
                                                     ),
-                                                    if (widget.adventCase.day ==
-                                                        14)
-                                                      Material(
-                                                        color:
-                                                            Colors.transparent,
-                                                        child: Text(
-                                                          'Not yet mon bébé <3',
-                                                          style: TextStyle(
-                                                              color: white),
-                                                        ),
-                                                      )
-                                                  ],
-                                                ),
-                                              ),
-                                            )
-                                          : Container(
-                                              color: widget.adventCase.day == 14
-                                                  ? pink
-                                                  : green,
-                                              child: Center(
-                                                child: SingleChildScrollView(
-                                                  child: Text(
-                                                    widget.adventCase.text
-                                                        .toString(),
-                                                    style: TextStyle(
-                                                        color: white,
-                                                        fontFamily: 'QuickSand',
-                                                        fontSize: 20),
-                                                    textAlign: TextAlign.center,
                                                   ),
                                                 ),
                                               ),
-                                            ),
+                                      ),
                                     ),
                                   ),
                                 ),
