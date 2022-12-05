@@ -1,16 +1,3 @@
-# taradvent
+# Taradvent
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It is generally considered a very wholesome idea to create a custom advent calendar for the people you love. I was researching for different kinds of advent calendars you can buy or DIY to put custom messages in it for my girlfriend Tara. Then, I remembered: Wait, I'm actually an app developer. So on a cloudy Saturday afternoon, I was able to very quickly build this little app thanks to Flutter.
